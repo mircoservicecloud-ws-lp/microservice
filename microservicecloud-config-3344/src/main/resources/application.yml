@@ -1,0 +1,30 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: microservicecloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wsno1only/microservicecloud-config.git
+
+
+
+#spring:
+#  profiles:
+#    active:
+#    - dev
+#
+#---
+#spring:
+#  profiles: dev
+#  application:
+#        name: microservicecloud-atguigu-dev
+#
+#---
+#spring:
+#  prifile: test
+#  application:
+#    name: microservicecloud-config-atguigu-test
